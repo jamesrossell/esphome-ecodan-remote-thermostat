@@ -21,7 +21,7 @@ In this example the climate.kantoor `current_temperature` attribute is linked as
         entity_id: >-
           number.ecodan_thermostat_room_0
       data:
-        temperature: "{{ state_attr('climate.kantoor' , 'current_temperature') }}"
+        value: "{{ state_attr('climate.kantoor' , 'current_temperature') }}"
 ```
 
 Paste this into a file `automations.yaml` in the `config` folder of home assistant. Include the `automations.yaml` in home assistant by adding the line below in `configuration.yaml`.
